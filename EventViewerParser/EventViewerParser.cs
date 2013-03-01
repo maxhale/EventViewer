@@ -33,8 +33,9 @@ namespace EventViewerParser
                 {
                     File.Create(fileLocation);
                 }
-
-                StreamWriter sw = new StreamWriter(fileLocation, false);
+                String xmlReturn = "";
+                StreamWriter sw = new StreamWriter(xmlReturn);
+                //StreamWriter sw = new StreamWriter(fileLocation, false);
                 foreach (EventLogEntry entry in myLog.Entries)
                 {
                     Match containsAppName = Regex.Match(entry.Message, appName);
@@ -42,6 +43,7 @@ namespace EventViewerParser
                     {
                         if (appName != "" && containsAppName.Success)
                         {
+                            Console.WriteLine("Found entry.");
                             buildXML(entry, sw);
                         }
                         else if (appName == "")
@@ -50,6 +52,8 @@ namespace EventViewerParser
                         }
                     }
                 }
+                ConnectionHandler connectionHandler = new ConnectionHandler();
+                connectionHandler.UploadErrorLog(xmlReturn);
             }
             catch (Exception e)
             {

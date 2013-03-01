@@ -61,13 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="Service References\ServiceRef\EventViewerParser.ServiceRef.CompositeType.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
     <None Include="Service References\ServiceRef\Service.wsdl" />
-    <None Include="Service References\ServiceRef\Service.xsd">
-      <SubType>Designer</SubType>
-    </None>
     <None Include="Service References\ServiceRef\Service1.xsd">
       <SubType>Designer</SubType>
     </None>

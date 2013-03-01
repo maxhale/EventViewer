@@ -22,7 +22,6 @@
   </MetadataSources>
   <Metadata>
     <MetadataFile FileName="Service.wsdl" MetadataType="Wsdl" ID="feb10a15-c8f3-4bf6-959c-4bbc90f3b3a5" SourceId="1" SourceUrl="http://localhost:61429/EventParserWCF/Service.svc?wsdl" />
-    <MetadataFile FileName="Service.xsd" MetadataType="Schema" ID="3685dff6-df3b-4fb7-97fc-807d01a97d4b" SourceId="1" SourceUrl="http://localhost:61429/EventParserWCF/Service.svc?xsd=xsd2" />
     <MetadataFile FileName="Service1.xsd" MetadataType="Schema" ID="07e1da0e-188d-4cc8-adc7-75697e051b91" SourceId="1" SourceUrl="http://localhost:61429/EventParserWCF/Service.svc?xsd=xsd1" />
     <MetadataFile FileName="Service2.xsd" MetadataType="Schema" ID="0712bacc-07a3-48fe-8833-330259519220" SourceId="1" SourceUrl="http://localhost:61429/EventParserWCF/Service.svc?xsd=xsd0" />
     <MetadataFile FileName="Service.disco" MetadataType="Disco" ID="67ec50cc-7eb1-41db-8237-9d2d3c3d1303" SourceId="1" SourceUrl="http://localhost:61429/EventParserWCF/Service.svc?disco" />

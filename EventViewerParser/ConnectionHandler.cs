@@ -7,11 +7,11 @@ namespace EventViewerParser
 {
     class ConnectionHandler
     {
-        public void testSubmit()
+        public void UploadErrorLog(String xml)
         {
 
             ServiceRef.ServiceClient client = new ServiceRef.ServiceClient();
-            String returnV = client.UploadErrorLog(1);
+            String returnV = client.UploadErrorLog(xml);
 
             Console.WriteLine(returnV);
 
