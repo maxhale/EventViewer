@@ -1,0 +1,6 @@
+c:\users\mhale\documents\visual studio 2010\Projects\EventViewerParser\EventViewerParser\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\mhale\documents\visual studio 2010\Projects\EventViewerParser\EventViewerParser\bin\Debug\EventViewerParser.exe.config
+c:\users\mhale\documents\visual studio 2010\Projects\EventViewerParser\EventViewerParser\bin\Debug\EventViewerParser.exe
+c:\users\mhale\documents\visual studio 2010\Projects\EventViewerParser\EventViewerParser\bin\Debug\EventViewerParser.pdb
+c:\users\mhale\documents\visual studio 2010\Projects\EventViewerParser\EventViewerParser\obj\x86\Debug\EventViewerParser.exe
+c:\users\mhale\documents\visual studio 2010\Projects\EventViewerParser\EventViewerParser\obj\x86\Debug\EventViewerParser.pdb
