@@ -22,6 +22,13 @@ namespace EventViewerParser
             appName = app;
         }
 
+        public void generateTestError()
+        {
+            EventLog myLog = new EventLog();
+            myLog.Log = "Application";
+            EventLog.WriteEntry("Application","Test Error" , EventLogEntryType.Error);
+        }
+
         public void getLogData()
         {
             try
@@ -33,9 +40,9 @@ namespace EventViewerParser
                 {
                     File.Create(fileLocation);
                 }
-                String xmlReturn = "";
-                StreamWriter sw = new StreamWriter(xmlReturn);
-                //StreamWriter sw = new StreamWriter(fileLocation, false);
+                
+                StreamWriter sw = new StreamWriter(fileLocation, false);
+                List<XMLBuilder> entries = new List<XMLBuilder>();
                 foreach (EventLogEntry entry in myLog.Entries)
                 {
                     Match containsAppName = Regex.Match(entry.Message, appName);
@@ -44,14 +51,20 @@ namespace EventViewerParser
                         if (appName != "" && containsAppName.Success)
                         {
                             Console.WriteLine("Found entry.");
-                            buildXML(entry, sw);
+                            entries.Add(buildXML(entry));
                         }
                         else if (appName == "")
                         {
-                            buildXML(entry, sw);
+                            entries.Add(buildXML(entry));
                         }
                     }
                 }
+
+                Serialize(entries,sw);
+        
+                sw.Close();
+                string xmlReturn = System.IO.File.ReadAllText(fileLocation);
+
                 ConnectionHandler connectionHandler = new ConnectionHandler();
                 connectionHandler.UploadErrorLog(xmlReturn);
             }
@@ -61,7 +74,7 @@ namespace EventViewerParser
             }
         }
 
-        public void buildXML(EventLogEntry entry, StreamWriter file)
+        public XMLBuilder buildXML(EventLogEntry entry)
         {
             XMLBuilder xml = new XMLBuilder();
             xml.Category = entry.Category; //??
@@ -71,8 +84,13 @@ namespace EventViewerParser
             xml.MachineName = entry.MachineName;
             xml.UserName = entry.UserName;
             xml.TimeGenerated = entry.TimeGenerated.ToString();
-            XmlSerializer x = new XmlSerializer(xml.GetType());
-            x.Serialize(file, xml);
+            return xml;
+        }
+
+        public void Serialize(List<XMLBuilder> entries, StreamWriter file)
+        {
+            XmlSerializer x = new XmlSerializer(entries.GetType());
+            x.Serialize(file, entries);
         }
     }
 }

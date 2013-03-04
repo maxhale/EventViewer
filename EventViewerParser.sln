@@ -27,6 +27,11 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "EventParserWCF", "..\..\Web
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventGUI", "EventGUI\EventGUI.csproj", "{7723A194-EFBA-4886-9E21-8F63414F3CEC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{79FA190B-407F-4F2C-9401-BB129E73CD43} = {79FA190B-407F-4F2C-9401-BB129E73CD43}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +62,16 @@ Global
 		{79FA190B-407F-4F2C-9401-BB129E73CD43}.Release|Mixed Platforms.ActiveCfg = Debug|Any CPU
 		{79FA190B-407F-4F2C-9401-BB129E73CD43}.Release|Mixed Platforms.Build.0 = Debug|Any CPU
 		{79FA190B-407F-4F2C-9401-BB129E73CD43}.Release|x86.ActiveCfg = Debug|Any CPU
+		{7723A194-EFBA-4886-9E21-8F63414F3CEC}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{7723A194-EFBA-4886-9E21-8F63414F3CEC}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{7723A194-EFBA-4886-9E21-8F63414F3CEC}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{7723A194-EFBA-4886-9E21-8F63414F3CEC}.Debug|x86.ActiveCfg = Debug|x86
+		{7723A194-EFBA-4886-9E21-8F63414F3CEC}.Debug|x86.Build.0 = Debug|x86
+		{7723A194-EFBA-4886-9E21-8F63414F3CEC}.Release|Any CPU.ActiveCfg = Release|x86
+		{7723A194-EFBA-4886-9E21-8F63414F3CEC}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{7723A194-EFBA-4886-9E21-8F63414F3CEC}.Release|Mixed Platforms.Build.0 = Release|x86
+		{7723A194-EFBA-4886-9E21-8F63414F3CEC}.Release|x86.ActiveCfg = Release|x86
+		{7723A194-EFBA-4886-9E21-8F63414F3CEC}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

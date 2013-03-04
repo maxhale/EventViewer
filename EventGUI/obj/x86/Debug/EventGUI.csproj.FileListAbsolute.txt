@@ -1,0 +1,9 @@
+C:\Users\mhale\Documents\Visual Studio 2010\Projects\EventViewerParser\EventGUI\bin\Debug\EventGUI.exe
+C:\Users\mhale\Documents\Visual Studio 2010\Projects\EventViewerParser\EventGUI\bin\Debug\EventGUI.pdb
+C:\Users\mhale\Documents\Visual Studio 2010\Projects\EventViewerParser\EventGUI\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\mhale\Documents\Visual Studio 2010\Projects\EventViewerParser\EventGUI\obj\x86\Debug\EventGUI.Form1.resources
+C:\Users\mhale\Documents\Visual Studio 2010\Projects\EventViewerParser\EventGUI\obj\x86\Debug\EventGUI.Properties.Resources.resources
+C:\Users\mhale\Documents\Visual Studio 2010\Projects\EventViewerParser\EventGUI\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\mhale\Documents\Visual Studio 2010\Projects\EventViewerParser\EventGUI\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\mhale\Documents\Visual Studio 2010\Projects\EventViewerParser\EventGUI\obj\x86\Debug\EventGUI.exe
+C:\Users\mhale\Documents\Visual Studio 2010\Projects\EventViewerParser\EventGUI\obj\x86\Debug\EventGUI.pdb

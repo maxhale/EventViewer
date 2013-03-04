@@ -23,7 +23,7 @@ namespace EventViewerParser
             {
                 EventViewerParserID parse = new EventViewerParserID(_daysBack, _specificApp);
                 parse.getLogData();
-                ConnectionHandler connectionHandler = new ConnectionHandler();
+                
             }
             return 0;
         }
