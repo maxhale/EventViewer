@@ -22,7 +22,10 @@ namespace EventViewerParser
             else
             {
                 EventViewerParserID parse = new EventViewerParserID(_daysBack, _specificApp);
-                parse.getLogData();
+                while(Console.ReadLine().ToLower() != "q")
+                {
+                    parse.getLogData();
+                }
                 
             }
             return 0;
